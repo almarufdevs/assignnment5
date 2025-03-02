@@ -2,6 +2,10 @@ document.getElementById("login-btn").addEventListener("click", function(){
     window.location.href="./link.html"
 })
 
+function changeBackground() {
+    const colors = ["red", "blue", "green", "purple", "yellow", "orange"];
+    document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+}
 
 
 
@@ -9,11 +13,6 @@ document.getElementById("login-btn").addEventListener("click", function(){
 
 
 
-// color change
-
-
-//button text count//
-//btn1//
 document.querySelector("#warningbtn")?.addEventListener("click", function() {
     const taskCountElem = document.getElementById("taskCount"); 
     const taskCountElem2 = document.getElementById("task2");
